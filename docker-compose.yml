@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  video_processor:
+    build: .
+    volumes:
+      - "./:/build"
+    command: tail -f /dev/null
